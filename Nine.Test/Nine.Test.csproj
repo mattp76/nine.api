@@ -129,15 +129,17 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Helpers\PathHelper.cs" />
+    <Compile Include="ShowServiceTest.cs" />
     <Compile Include="HomeControllerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
-    <None Include="TestResp\TestShowInvalidReq.json" />
-    <None Include="TestResp\TestShowReq.json" />
-    <None Include="TestResp\TestShowResp.json" />
+    <None Include="TestData\testrequest.json" />
+    <None Include="TestData\testserviceresponse.json" />
+    <None Include="TestData\testfullresponse.json" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Nine.Api\Nine.Api.csproj">
@@ -149,9 +151,7 @@
       <Name>Nine.Core</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="NewFolder1\" />
-  </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
